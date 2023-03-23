@@ -1,3 +1,9 @@
+print ("responda las preguntas siguiendo estas normas: ")
+print ("1. Para preguntas de nombres solo el primer nombre y el primer apellido")
+print ("2. Para nombres propios siempre en mayúscula")
+print ("3. sin finalizar en punto")
+print ("4. Con tildes")
+
 import random
 
 # Define una lista de preguntas y respuestas
@@ -7,10 +13,19 @@ preguntas_respuestas = [
     ('¿Quién escribió "El Quijote"?', 'Miguel de Cervantes'),
     ('¿Quién pintó la Mona Lisa?', 'Leonardo da Vinci'),
     ('¿Cuál es el río más largo del mundo?', 'Amazonas'),
-    ('¿En qué país se encuentra la Torre Eiffel?', 'Francia'),
+    ("¿En qué año se aprobó la actual Constitución española?", "1978"),
+    ('¿En qué año murió Freddie Mercury?', '1991'),
+    ('¿Quién inventó la bombilla?', 'Thomas Edison'),
+    ('¿En qué país se usó la primera bomba atómica?', 'Japón'),
+    ('¿Cuándo empezó la Primera Guerra Mundial?', '1914'),
+    ('¿En qué año se produjo la Revolución Francesa?', '1789'),
+    ('¿Cuántas veces ha estado el hombre en la Luna?', '6'),
+    ('¿Qué presidente de Estados Unidos fue asesinado en Dallas?', 'John Kennedy'),
+    ('¿Cuándo se extinguieron los dinosaurios (en años)?', '66000000'),
+    ('¿Según la Biblia, ¿cuántos años vivió Matusalén?', '969'),
+    ('¿Cuál es el libro más vendido de la historia?', 'La Biblia'),
 ]
 
-# Repite hasta que el usuario desee detenerse
 while True:
     # Genera una pregunta aleatoria y muestra la pregunta
     pregunta, respuesta = random.choice(preguntas_respuestas)
